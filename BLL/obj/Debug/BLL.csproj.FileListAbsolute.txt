@@ -1,0 +1,14 @@
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\BLL.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\BLL.pdb
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\AutoMapper.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\DAL.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\EntityFramework.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\DAL.pdb
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\DAL.dll.config
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\AutoMapper.xml
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\bin\Debug\EntityFramework.xml
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\obj\Debug\BLL.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\BLL\obj\Debug\BLL.pdb
