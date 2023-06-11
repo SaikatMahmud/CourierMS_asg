@@ -64,7 +64,14 @@
     <Compile Include="Models\CustomerInfo.cs" />
     <Compile Include="Models\Courier.cs" />
     <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\AdminRepo.cs" />
+    <Compile Include="Repos\CourierRepo.cs" />
+    <Compile Include="Repos\CustomerInfoRepo.cs" />
+    <Compile Include="Repos\DBRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
+    <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -75,9 +82,7 @@
       <DependentUpon>202306111529405_initialTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
