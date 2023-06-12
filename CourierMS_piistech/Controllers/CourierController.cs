@@ -28,6 +28,7 @@ namespace CourierMS_piistech.Controllers
                 }
                 else
                 {
+                    pagingModel = new PagingModel(pagingModel.PageNumber, pagingModel.PageSize);
                     var data = source.Skip((pagingModel.PageNumber - 1) * pagingModel.PageSize).Take(pagingModel.PageSize).ToList();
                     var page = new PaginationFilter(source.Count, pagingModel.PageSize, pagingModel.PageNumber);
                     return Request.CreateResponse(HttpStatusCode.OK, new { Data = data, Page = page });

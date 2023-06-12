@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initialTable : DbMigration
+    public partial class tableCreate : DbMigration
     {
         public override void Up()
         {
@@ -16,7 +16,6 @@
                         Mobile = c.String(),
                         Email = c.String(),
                         Username = c.String(),
-                        Password = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -26,13 +25,14 @@
                     {
                         ConsignmentNo = c.Int(nullable: false, identity: true),
                         ParcelType = c.String(),
-                        Weight = c.String(),
+                        Weight = c.Int(nullable: false),
                         ShippingCost = c.Int(nullable: false),
                         PlacingDate = c.DateTime(nullable: false),
-                        DeliveryDate = c.DateTime(nullable: false),
+                        DeliveryDate = c.DateTime(),
                         CurrentLocation = c.String(),
+                        FromLocation = c.String(),
                         Destination = c.String(),
-                        ETA = c.Int(nullable: false),
+                        ETA = c.Int(),
                         Status = c.String(),
                     })
                 .PrimaryKey(t => t.ConsignmentNo);
@@ -65,12 +65,23 @@
                     })
                 .PrimaryKey(t => t.Id);
             
+            CreateTable(
+                "dbo.Users",
+                c => new
+                    {
+                        Username = c.String(nullable: false, maxLength: 128),
+                        Password = c.String(),
+                        UserType = c.String(),
+                    })
+                .PrimaryKey(t => t.Username);
+            
         }
         
         public override void Down()
         {
             DropForeignKey("dbo.CustomerInfoes", "ConsignmentNo", "dbo.Couriers");
             DropIndex("dbo.CustomerInfoes", new[] { "ConsignmentNo" });
+            DropTable("dbo.Users");
             DropTable("dbo.Tokens");
             DropTable("dbo.CustomerInfoes");
             DropTable("dbo.Couriers");

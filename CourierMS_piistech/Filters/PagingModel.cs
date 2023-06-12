@@ -16,8 +16,8 @@ namespace CourierMS_piistech.Filters
         }
         public PagingModel(int pageNumber, int pageSize)
         {
-            this.PageNumber = pageNumber < 1 ? 1 : pageNumber;
-            this.PageSize = pageSize >= 15 ? 15 : pageSize; //allow maximum 15 records per page
+            this.PageNumber = (pageNumber < 1) ? 1 : pageNumber;
+            this.PageSize = (pageSize >= 15) ? 15 : pageSize; //allow maximum 15 records per page
         }
     }
 }
