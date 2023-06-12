@@ -12,27 +12,34 @@ namespace DAL.Repos
     {
         public Courier Create(Courier obj)
         {
-            throw new NotImplementedException();
+            db.Couriers.Add(obj);
+            if (db.SaveChanges() > 0) return obj;
+            return null;
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var exC = Get(id);
+            db.Couriers.Remove(exC);
+            return db.SaveChanges() > 0;
         }
 
         public List<Courier> Get()
         {
-            throw new NotImplementedException();
+            return db.Couriers.ToList();
         }
 
         public Courier Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Couriers.Find(id);
         }
 
         public Courier Update(Courier obj)
         {
-            throw new NotImplementedException();
+            var exCourier = Get(obj.ConsignmentNo);
+            db.Entry(exCourier).CurrentValues.SetValues(obj);
+            if (db.SaveChanges() > 0) return obj;
+            return null;
         }
     }
 }

@@ -12,7 +12,9 @@ namespace DAL.Repos
     {
         public Token Create(Token obj)
         {
-            throw new NotImplementedException();
+            db.Tokens.Add(obj);
+            if (db.SaveChanges() > 0) return obj;
+            return null;
         }
 
         public bool Delete(string id)
@@ -22,17 +24,20 @@ namespace DAL.Repos
 
         public List<Token> Get()
         {
-            throw new NotImplementedException();
+            return db.Tokens.ToList();
         }
 
-        public Token Get(string id)
+        public Token Get(string tkey)
         {
-            throw new NotImplementedException();
+            return db.Tokens.FirstOrDefault(t => t.TKey.Equals(tkey));
         }
 
         public Token Update(Token obj)
         {
-            throw new NotImplementedException();
+            var exToken = Get(obj.TKey);
+            db.Entry(exToken).CurrentValues.SetValues(obj);
+            if (db.SaveChanges() > 0) return obj;
+            return null;
         }
     }
 }

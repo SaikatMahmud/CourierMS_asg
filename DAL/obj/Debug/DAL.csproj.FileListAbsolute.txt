@@ -12,3 +12,4 @@ D:\A I U B\Adv .NET Git\CourierMS_piistech\DAL\obj\Debug\DAL.dll
 D:\A I U B\Adv .NET Git\CourierMS_piistech\DAL\obj\Debug\DAL.pdb
 D:\A I U B\Adv .NET Git\CourierMS_piistech\DAL\obj\Debug\DAL.Migrations.initialTable.resources
 D:\A I U B\Adv .NET Git\CourierMS_piistech\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\A I U B\Adv .NET Git\CourierMS_piistech\DAL\obj\Debug\DAL.Migrations.tableModify1.resources

@@ -59,6 +59,10 @@
     <Compile Include="Migrations\202306111529405_initialTable.designer.cs">
       <DependentUpon>202306111529405_initialTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306120806444_tableModify1.cs" />
+    <Compile Include="Migrations\202306120806444_tableModify1.designer.cs">
+      <DependentUpon>202306120806444_tableModify1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\CustomerInfo.cs" />
@@ -80,6 +84,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202306111529405_initialTable.resx">
       <DependentUpon>202306111529405_initialTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306120806444_tableModify1.resx">
+      <DependentUpon>202306120806444_tableModify1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

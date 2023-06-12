@@ -10,6 +10,7 @@ namespace DAL.Repos
 {
     internal class AdminRepo : DBRepo, IRepo<Admin, int, Admin>
     {
+        //************ no CRUD here ************//
         public Admin Create(Admin obj)
         {
             throw new NotImplementedException();

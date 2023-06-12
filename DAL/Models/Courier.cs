@@ -18,7 +18,7 @@ namespace DAL.Models
         public DateTime DeliveryDate { get; set; }
         public string CurrentLocation{ get; set; }
         public string Destination { get; set; }
-        public int ETA { get; set; }
+        public int ETA { get; set; } //estiamte time of arrival in days
         public string Status { get; set; }
         public virtual CustomerInfo CustomerInfo { get; set; }
 

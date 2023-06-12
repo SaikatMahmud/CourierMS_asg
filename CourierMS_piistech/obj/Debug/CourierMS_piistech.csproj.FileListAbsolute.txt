@@ -71,3 +71,8 @@ D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\obj\Debug\CourierM
 D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\obj\Debug\CourierMS_piistech.csproj.CopyComplete
 D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\obj\Debug\CourierMS_piistech.dll
 D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\obj\Debug\CourierMS_piistech.pdb
+D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\bin\DAL.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\bin\AutoMapper.dll
+D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\bin\DAL.pdb
+D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\bin\DAL.dll.config
+D:\A I U B\Adv .NET Git\CourierMS_piistech\CourierMS_piistech\bin\AutoMapper.xml

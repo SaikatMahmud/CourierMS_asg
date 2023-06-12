@@ -12,27 +12,34 @@ namespace DAL.Repos
     {
         public CustomerInfo Create(CustomerInfo obj)
         {
-            throw new NotImplementedException();
+            db.CustomerInfos.Add(obj);
+            if (db.SaveChanges() > 0) return obj;
+            return null;
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var exD = Get(id);
+            db.CustomerInfos.Remove(exD);
+            return db.SaveChanges() > 0;
         }
 
         public List<CustomerInfo> Get()
         {
-            throw new NotImplementedException();
+            return db.CustomerInfos.ToList();
         }
 
         public CustomerInfo Get(int id)
         {
-            throw new NotImplementedException();
+            return db.CustomerInfos.Find(id);
         }
 
         public CustomerInfo Update(CustomerInfo obj)
         {
-            throw new NotImplementedException();
+            var exCustomerInfo = Get(obj.ConsignmentNo);
+            db.Entry(exCustomerInfo).CurrentValues.SetValues(obj);
+            if (db.SaveChanges() > 0) return obj;
+            return null;
         }
     }
 }
