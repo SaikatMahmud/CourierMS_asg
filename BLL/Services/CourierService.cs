@@ -133,7 +133,11 @@ namespace BLL.Services
             return (res != null) ? true : false;
         }
 
-
+        public static byte[] PrintReceipt(int consignmentNo)
+        {
+            var result = BLL.GeneratePDF.GetPDF("Receipt", Get(consignmentNo));
+            return result;
+        }
 
     }
 }

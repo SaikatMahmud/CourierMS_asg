@@ -22,7 +22,6 @@ namespace DAL.Models
         public string Destination { get; set; }
         public int? ETA { get; set; } //estiamte time of arrival in days
         public string Status { get; set; }
-      //  [Required]
         public virtual CustomerInfo CustomerInfo { get; set; }
 
     }

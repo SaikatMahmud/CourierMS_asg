@@ -10,7 +10,6 @@ namespace DAL.Models
 {
     public class CustomerInfo
     {
-        //[Required]
         [Key, ForeignKey("Courier")]
         public int ConsignmentNo { get; set; }
         public string SenderName { get; set; }
@@ -19,7 +18,6 @@ namespace DAL.Models
         public string ReceiverName { get; set; }
         public string ReceiverMobile { get; set; }
         public string ReceiverAddress { get; set; }
-      //  [Required]
         public virtual Courier Courier { get; set; }
     }
 }

@@ -1,0 +1,33 @@
+﻿<html>
+</head>
+<body>
+    <div style="background: oldlace ;
+            font-size: 20px;
+            padding: 25px;
+            border: 1px solid black;
+            margin-left: 80px; margin-right:80px; margin-top:10px">
+        <h2 align="center">XYZ Courier</h2>
+        <p align="center">Receipt of Consignment <i>#@Model.ConsignmentNo</i></p>
+
+        <div align="left">
+            <b>Sender Name:</b> @Model.CustomerInfo.SenderName<br>
+            <b>Sender Mobile:</b> @Model.CustomerInfo.SenderMobile<br>
+            <b>Sender Address:</b> @Model.CustomerInfo.SenderAddress<br>
+
+            <b>Receiver Name:</b> @Model.CustomerInfo.ReceiverName<br>
+            <b>Receiver Mobile:</b> @Model.CustomerInfo.ReceiverMobile<br>
+            <b>Receiver Address:</b> @Model.CustomerInfo.ReceiverAddress<br>
+
+        </div><br>
+        <div align="left">
+            <b>Parcel Type:</b> @Model.ParcelType<br>
+            <b>Weight:</b> @Model.Weight<br>
+            <b>Charged Amount:</b> @Model.ShippingCost<br>
+            <b>Placing Date:</b> @Model.PlacingDate<br />
+            <b>Destination:</b> @Model.Destination<br />
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
