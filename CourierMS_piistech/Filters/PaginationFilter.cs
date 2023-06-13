@@ -13,8 +13,6 @@ namespace CourierMS_piistech.Filters
         public int TotalPages { get; set; }
         public int PreviousPage { get; set; }
         public int NextPage { get; set; }
-        // public bool HasPrevious { get; set; }
-        //public bool HasNext { get; set; }
         public PaginationFilter(int resourceCount, int pageSize, int pageNumber)
         {
             this.TotalCount = resourceCount;

@@ -17,9 +17,9 @@ namespace DAL.Repos
             return null;
         }
 
-        public bool Delete(int id)
+        public bool Delete(int consignmentNo)
         {
-            var exC = Get(id);
+            var exC = Get(consignmentNo);
             db.Couriers.Remove(exC);
             return db.SaveChanges() > 0;
         }
@@ -29,9 +29,9 @@ namespace DAL.Repos
             return db.Couriers.ToList();
         }
 
-        public Courier Get(int id)
+        public Courier Get(int consignmentNo)
         {
-            return db.Couriers.Find(id);
+            return db.Couriers.Find(consignmentNo);
         }
 
         public Courier Update(Courier obj)

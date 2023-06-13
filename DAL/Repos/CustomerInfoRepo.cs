@@ -17,9 +17,9 @@ namespace DAL.Repos
             return null;
         }
 
-        public bool Delete(int id)
+        public bool Delete(int consignmentNo)
         {
-            var exD = Get(id);
+            var exD = Get(consignmentNo);
             db.CustomerInfos.Remove(exD);
             return db.SaveChanges() > 0;
         }
@@ -29,9 +29,9 @@ namespace DAL.Repos
             return db.CustomerInfos.ToList();
         }
 
-        public CustomerInfo Get(int id)
+        public CustomerInfo Get(int consignmentNo)
         {
-            return db.CustomerInfos.Find(id);
+            return db.CustomerInfos.Find(consignmentNo);
         }
 
         public CustomerInfo Update(CustomerInfo obj)
